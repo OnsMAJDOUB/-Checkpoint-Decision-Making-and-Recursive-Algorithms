@@ -1,0 +1,9 @@
+Function Power(base, exponent)
+    If exponent = 0 Then
+        Return 1
+    Else If exponent > 0 Then
+        Return base * Power(base, exponent - 1)
+    Else
+        Return 1 / Power(base, -exponent)
+    End If
+End Function

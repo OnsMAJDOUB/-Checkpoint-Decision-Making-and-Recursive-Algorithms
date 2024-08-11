@@ -1,0 +1,10 @@
+ALGORITHM yeap-year
+VAR
+ year : INTEGER   
+BEGIN
+ IF ((year % 4 == 0) AND (year % 100 !== 0)) OR (year % 400 == 0) THEN
+    RETURN TRUE
+  ELSE
+    RETURN FALSE
+  END IF
+END
